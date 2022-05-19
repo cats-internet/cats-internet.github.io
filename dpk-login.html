@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://cats-internet.github.io/style.css">
+
+<br>
+
+<center>
+
+<h1>Are you DaProKitty? If yes, enter your username and password below.</h1>
+  
+<label for="user">Username:</label><br>
+<input type="text" id="user" name="user"><br>
+<label for="pass">Password:</label><br>
+<input type="password" id="pass" name="pass"><br><br>
+<input type="button" value="Log In" onclick="login()">
+
+<br> 
+
+<a href="/">Go back to Home</a>
+  
+</center>
+
+<br> 
+
+<script>
+  function login() {
+    var user = document.getElementById("user").value;
+    var pass = document.getElementById("pass").value;
+    
+    if (user == "DaProKitty" && pass == "1111") {
+      window.location.replace("/dpk")
+  }
+</script>
